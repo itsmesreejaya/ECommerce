@@ -1,0 +1,35 @@
+{
+    // Compiler options control how TypeScript compiler behaves
+    "compilerOptions": {
+      // Specifies the ECMAScript target version for the compiled JavaScript
+      "target": "es2016",
+  
+      // Defines the module system used in the generated JavaScript
+      "module": "commonjs",  
+  
+      // Specifies the directory where the compiled JavaScript files should be placed
+      "outDir": "./dist",
+  
+      // Enables strict type-checking options for better code quality
+      "strict": true,
+  
+      // Allows compatibility with modules written as CommonJS
+      "esModuleInterop": true,
+  
+      // Specifies the strategy for resolving module names (Node.js-style module resolution)
+      "moduleResolution": "node",
+  
+      // Allows importing TypeScript files without specifying the ".ts" extension explicitly
+      "allowImportingTsExtensions": true,
+  
+      // When set to true, TypeScript won't generate any output files (JavaScript files)
+      "noEmit": true,
+    },
+  
+    // Specifies an array of file or directory patterns to include in the compilation
+    "include": ["src/**/*.ts", "types/**/*.ts", "src/server.ts"],
+  
+    // Specifies an array of file or directory patterns to exclude from the compilation
+    "exclude": ["node_modules", "dist"]
+  }
+  
